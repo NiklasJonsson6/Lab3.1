@@ -47,14 +47,14 @@ public class CounterModel implements CounterInterface {
 
     @Override
     public boolean equals(Object r) {
-        if (r == null) {
-            return false;
+        if (this == r) {
+            return true;
         }
-        if (!(r instanceof CounterModel)) {
+        if (r == null || this.getClass() != r.getClass()) {
             return false;
         }
 
-        CounterModel r2 = (CounterModel)r;
-        return this.value == r2.value;
+        CounterModel tmp = (CounterModel)r;
+        return this.value == tmp.value;
     }
 }
