@@ -33,10 +33,20 @@ public class TestCounter {
             error = true;
         }
 
+        c2.reset();
+        if (!(c1.equals(c2))) {
+            System.out.println("Error in equals!");
+            error = true;
+        }
 
+        //For manual toString check
+        System.out.println(c1 + "\n" + c2);
 
         if (!error){
             System.out.println("No errors!");
         }
+
+        CounterModel[] ca = new CounterModel[10];
+
     }
 }

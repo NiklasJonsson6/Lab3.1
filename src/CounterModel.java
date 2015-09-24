@@ -42,7 +42,7 @@ public class CounterModel implements CounterInterface {
 
     @Override
     public String toString() {
-        return String.valueOf(this.value);
+        return "Maximum value: " + (this.modulus - 1) + ", Current value: " + this.value;
     }
 
     @Override
