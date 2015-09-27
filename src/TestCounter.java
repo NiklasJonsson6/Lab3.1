@@ -47,6 +47,17 @@ public class TestCounter {
         }
 
         CounterModel[] ca = new CounterModel[10];
-
+        /* int i = 0;
+        for (int k = 0; k < 10; k++) {
+            ca[k].increment();
+            while (i < k) {
+                ca[k].increment();
+                i++;
+            }
+            i = 0;
+        }
+        for (int k = 0; k < 10; k++) {
+            System.out.println(ca[k]);
+        } */
     }
 }
