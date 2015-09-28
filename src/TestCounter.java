@@ -1,3 +1,5 @@
+import org.w3c.dom.css.Counter;
+
 /**
  * Created by Niklas on 2015-09-21.
  */
@@ -43,7 +45,7 @@ public class TestCounter {
         System.out.println(c1 + "\n" + c2);
 
         if (!error){
-            System.out.println("No errors!");
+            System.out.println("No errors! \n");
         }
 
         CounterModel[] ca = new CounterModel[10];
@@ -57,10 +59,12 @@ public class TestCounter {
                 ca[k].increment();
                 i++;
             }
+            System.out.println("Counter nr " + i + ": " + ca[i]);
             i = 0;
         }
-        for (int k = 0; k < 10; k++) {
-            System.out.println(ca[k]);
-        }
+    }
+
+    void changeValue(CounterModel r) {
+
     }
 }
