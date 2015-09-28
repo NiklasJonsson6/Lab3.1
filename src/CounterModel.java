@@ -1,5 +1,3 @@
-import org.w3c.dom.css.Counter;
-
 /**
  * Created by Niklas on 2015-09-21.
  */
@@ -49,16 +47,15 @@ public class CounterModel implements CounterInterface {
 
     @Override
     public boolean equals(Object r) {
-        if (this == r) {
+        /* if (this == r) {
             return true;
         }
         if (r == null || this.getClass() != r.getClass()) {
             return false;
         }
 
-        //CounterModel tmp = (CounterModel)r;
-        return this.value == ((CounterModel)r).value;
+        return this.value == ((CounterModel)r).value; */
 
-        // return super.equals(r) && this.value == ((CounterModel)r).getValue();
+        return super.equals(r) && this.value == ((CounterModel)r).value;
     }
 }
