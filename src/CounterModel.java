@@ -6,6 +6,10 @@ public class CounterModel implements CounterInterface {
     private int value = 0; //start value
     private int modulus; //"wraps around" to 0 at:
 
+    public CounterModel() {
+        this.modulus = 15;
+    }
+
     /**
      *
      * @param modulus   The counter's maximum value, where it will start over from 0
