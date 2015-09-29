@@ -37,14 +37,22 @@ public class FastCounter extends CounterModel {
      * Increase value with x
      */
     public void upMany() {
-        //TODO
+        for (int k = 0; k < this.x; k++) {
+            this.increment();
+        }
     }
 
     /**
      * Decrease value with x
      */
     public void downMany() {
-        //TODO
+        for (int k = 0; k < this.x; k++) {
+            this.decrement();
+        }
+    }
+
+    public int getStep() {
+        return this.x;
     }
 
     @Override
@@ -54,6 +62,13 @@ public class FastCounter extends CounterModel {
 
     @Override
     public boolean equals(Object r) {
-        return super.equals(r); //TODO
+        if (this == r) {
+            return true;
+        }
+        if (r == null || this.getClass() != r.getClass()) {
+            return false;
+        }
+
+        return this.getValue() == ((FastCounter)r).getValue();
     }
 }
