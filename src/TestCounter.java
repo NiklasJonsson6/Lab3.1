@@ -18,12 +18,17 @@ public class TestCounter {
         int prev_c1 = c1.getValue(); //in case of wrong starting value
         int prev_c2 = c2.getValue();
 
-        c1.increment();
-        c2.decrement();
-        if (!(prev_c1 == c1.getValue() - 1)){
+        for (int k = 0; k < 10; k++) {
+            c1.increment();
+        }
+        c2.increment();
+        if (!(prev_c2 == c2.getValue() - 1) || c1.getValue() != prev_c1){
             System.out.println("Error in increment!");
             error = true;
         }
+
+        c2.reset();
+        c2.decrement();
         if (!(prev_c2 == c2.getValue() + 1)){
             System.out.println("Error in decrement!");
             error = true;
@@ -49,10 +54,10 @@ public class TestCounter {
         }
 
         CounterModel[] ca = new CounterModel[10];
-
         for(int i = 0; i < ca.length; i++) {
             ca[i] = new CounterModel(10);
         }
+        System.out.println("Should have same value as counter number:");
         int i = 0;
         for (int k = 0; k < 10; k++) {
             while (i < k) {
