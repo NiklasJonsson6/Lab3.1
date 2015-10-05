@@ -1,1 +1,39 @@
-test
+//Niklas Jonsson
+//Simon Moos
+//Grupp 13
+
+b)
+Utskrift:
+k=5
+a=1
+b=0
+
+k blir 5 för att den definieras till 5 och aldrig ändras,
+endast den nya variabeln n i changeValues som får k:s värde
+ökas en gång men används aldrig.
+
+a blir 1 för att CounterModel till skillnad från int 
+är en referenstyp så c1 i changeValues och a har samma 
+referensvärde och pekar på samma objekt. 
+
+b blir 0 för att man säger åt c2 att referera till en ny CounterModel
+i changeValues, inte samma som b.
+
+
+c)
+Om variabeln 'value' ändras till static så är det en klassvariabel
+och inte en instansvariabel. Variabeln hör till klassen i stället
+för till varje instans av klassen och skulle alltid vara samma för
+samtliga instanser av CounterModel.
+
+NbrOfCounters borde vara en klassmetod då antalet skapade counters
+hör till hela klassen och inte någon specifik instans.
+
+
+e)
+Två räknare som är lika har för tillfället samma värde. Modulusvärdet 
+och andra egenskaper spelar ingen roll.
+
+h)
+När man anropar increment på en FastCounter så ökas värdet med 1, precis
+som på en vanlig CounterModel. Det är up/downMany som stegar fortare.

@@ -4,6 +4,8 @@
 
 public class CounterModel implements CounterInterface {
 
+    private static int NbrOfCounters = 0; //Total number of counters created
+
     private int value = 0; //start value
     private int modulus; //"wraps around" to 0 at:
 
@@ -20,6 +22,7 @@ public class CounterModel implements CounterInterface {
             throw new IllegalArgumentException("The counter's maximum value has to be > 1!");
         }
         this.modulus = modulus;
+        NbrOfCounters++;
     }
 
     /**
@@ -49,6 +52,10 @@ public class CounterModel implements CounterInterface {
 
     public int getModulus() {
         return this.modulus;
+    }
+
+    public int getNbrOfCounters() {
+        return NbrOfCounters;
     }
 
     @Override
