@@ -1,6 +1,7 @@
-/**
- * Created by Niklas on 2015-09-21.
- */
+//Niklas Jonsson
+//Simon Moos
+//Grupp 13
+
 public class CounterModel implements CounterInterface {
 
     private int value = 0; //start value

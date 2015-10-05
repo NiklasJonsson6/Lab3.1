@@ -1,6 +1,7 @@
-/**
- * Created by Niklas on 2015-09-28.
- */
+//Niklas Jonsson
+//Simon Moos
+//Grupp 13
+
 public class FastCounter extends CounterModel {
 
     /**
