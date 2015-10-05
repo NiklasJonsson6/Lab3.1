@@ -11,7 +11,7 @@ public class CounterModel implements CounterInterface {
     }
 
     /**
-     *
+     * Constructor
      * @param modulus   The counter's maximum value, where it will start over from 0
      */
     public CounterModel(int modulus) {

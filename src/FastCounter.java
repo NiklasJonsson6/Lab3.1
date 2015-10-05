@@ -9,14 +9,16 @@ public class FastCounter extends CounterModel {
     private int x;
 
     /**
-     * No parameters, default values are mod = 15, x = 5
+     * Constructor with no parameters
+     * Default values are mod = 15, x = 5
      */
     public FastCounter () {
         this(15, 5);
     }
 
     /**
-     * Default modulus (15)
+     * Contructor with one parameter: number of steps to count fast
+     * Default value mod = 15
      * @param x Number of steps taken in up-, downMany
      */
     public FastCounter (int x) {
@@ -24,7 +26,7 @@ public class FastCounter extends CounterModel {
     }
 
     /**
-     * Constructor for a FastCounter
+     * Constructor with two parameters
      * @param modulus   The counter's maximum value, where it will start over from 0
      * @param x Number of steps taken in up-, downMany
      */
