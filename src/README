@@ -8,32 +8,34 @@ k=5
 a=1
 b=0
 
-k blir 5 för att den definieras till 5 och aldrig ändras,
-endast den nya variabeln n i changeValues som får k:s värde
-ökas en gång men används aldrig.
+k blir 5 fÃ¶r att den definieras till 5 och aldrig Ã¤ndras,
+endast den nya variabeln n i changeValues som fÃ¥r k:s vÃ¤rde
+Ã¶kas en gÃ¥ng (men anvÃ¤nds aldrig).
 
-a blir 1 för att CounterModel till skillnad från int 
-är en referenstyp så c1 i changeValues och a har samma 
-referensvärde och pekar på samma objekt. 
+a blir 1 fÃ¶r att CounterModel till skillnad frÃ¥n int
+Ã¤r en referenstyp sÃ¥ c1 i changeValues och a har samma
+referensvÃ¤rde och pekar pÃ¥ samma objekt.
 
-b blir 0 för att man säger åt c2 att referera till en ny CounterModel
+b blir 0 fÃ¶r att man sÃ¤ger Ã¥t c2 att referera till en ny CounterModel
 i changeValues, inte samma som b.
 
 
 c)
-Om variabeln 'value' ändras till static så är det en klassvariabel
-och inte en instansvariabel. Variabeln hör till klassen i stället
-för till varje instans av klassen och skulle alltid vara samma för
+Om variabeln 'value' Ã¤ndras till static sÃ¥ Ã¤r det en klassvariabel
+och inte en instansvariabel. Variabeln hÃ¶r till klassen i stÃ¤llet
+fÃ¥r till varje instans av klassen och skulle alltid vara samma fÃ¶r
 samtliga instanser av CounterModel.
 
-NbrOfCounters borde vara en klassmetod då antalet skapade counters
-hör till hela klassen och inte någon specifik instans.
+NbrOfCounters borde vara en klassmetod dÃ¥ antalet skapade counters
+hÃ¶r till hela klassen och inte nÃ¥gon specifik instans.
 
 
 e)
-Två räknare som är lika har för tillfället samma värde. Modulusvärdet 
-och andra egenskaper spelar ingen roll.
+TvÃ¥ rÃ¤klnare som Ã¤r lika har enligt oss om de kan tolkas som samma instanstyp
+och har samma value och modulus. Man skulle ocksÃ¥ kunna tÃ¤nka sig att
+definiera equals som att bara vÃ¤rdet Ã¤r samma pÃ¥ rÃ¤knarna och att resterande
+egenskaper inte spelar nÃ¥gon roll, men vi valde inte att gÃ¶ra pÃ¥ det sÃ¤ttet.
 
 h)
-När man anropar increment på en FastCounter så ökas värdet med 1, precis
-som på en vanlig CounterModel. Det är up/downMany som stegar fortare.
+NÃ¤r man anropar increment pÃ¥ en FastCounter sÃ¥ Ã¶kas vÃ¤rdet med 1, precis
+som pÃ¥ en vanlig CounterModel. Det Ã¤r up/downMany som stegar fortare.

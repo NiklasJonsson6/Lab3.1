@@ -10,7 +10,7 @@ public class CounterModel implements CounterInterface {
     private int modulus; //"wraps around" to 0 at:
 
     public CounterModel() {
-        this.modulus = 15;
+        this.modulus = 10;
     }
 
     /**
@@ -22,7 +22,7 @@ public class CounterModel implements CounterInterface {
             throw new IllegalArgumentException("The counter's maximum value has to be > 1!");
         }
         this.modulus = modulus;
-        NbrOfCounters++;
+        CounterModel.NbrOfCounters++;
     }
 
     /**
